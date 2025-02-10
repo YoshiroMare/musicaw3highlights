@@ -119,6 +119,22 @@ If needed, you can further use the `web_scraper.py` file to scrape the web page 
 
 # Scratchpad
 
+## Current Task: Implement RainbowKit Wallet Connection
 
+### Steps:
+[X] 1. Install required dependencies
+[X] 2. Configure RainbowKit and Wagmi providers
+[X] 3. Create ConnectButton component
+[X] 4. Update main page to use RainbowKit
+
+### Notes:
+- Using RainbowKit v2.2.3
+- Need to include WalletConnect projectId
+- Required dependencies: @rainbow-me/rainbowkit, wagmi, viem, @tanstack/react-query
+
+### Next Steps:
+1. Get a WalletConnect projectId from https://cloud.walletconnect.com
+2. Replace 'YOUR_PROJECT_ID' in providers.tsx with the actual projectId
+3. Test the wallet connection
 
 NEW
