@@ -4,10 +4,13 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiProvider, createConfig, http } from 'wagmi'
 import { mainnet } from 'wagmi/chains'
 import { ReactNode } from 'react'
-import { createStorage } from 'wagmi'
+import { createStorage, metaMask } from 'wagmi'
 
 const config = createConfig({
   chains: [mainnet],
+  connectors: [
+    metaMask()
+  ],
   transports: {
     [mainnet.id]: http()
   },
